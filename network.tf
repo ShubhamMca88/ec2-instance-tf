@@ -1,7 +1,7 @@
 # 
 resource "aws_key_pair" "shb-key" {
   key_name   = var.key_name
-  public_key = file(var.public_key_path)
+  public_key = file("${var.public_key_path}")
 }
 
 # key genrate commadn = ssh-keygen -t rsa -b 4096 -f ./id_rsa
