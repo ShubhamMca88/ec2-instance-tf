@@ -6,7 +6,7 @@ variable "ami_id" {
 variable "instance_type" {
   description = "EC2 instance type"
   type        = string
-  default     = "t3.medium"
+  default     = "t2.medium"
 }
 
 variable "instance_name" {
@@ -27,7 +27,7 @@ variable "public_key_path" {
 variable "volume_size" {
   description = "Size of the root EBS volume in GB"
   type        = number
-  default     = 30
+  default     = 8
 }
 
 variable "tags" {
@@ -38,15 +38,4 @@ variable "tags" {
     "Owner"       = "Shubham"
     "Project"     = "MultiPurposeEC2"
   }
-}
-variable "access_key" {
-  type = string
-}
-
-variable "secret_key" {
-  type = string
-}
-
-variable "region" {
-  type = string
 }
