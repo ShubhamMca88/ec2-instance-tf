@@ -21,7 +21,6 @@ variable "key_name" {
 
 variable "public_key_path" {
   description = "Path to the public key file"
-  type        = string
 }
 
 variable "volume_size" {
@@ -44,23 +43,7 @@ variable "project" {
   type        = string
 }
 
-variable "key_name" {
-  description = "Name of the SSH key pair"
-  type        = string
-}
-
-variable "public_key_path" {
-  description = "Path to the public key file"
-  type        = string
-}
-
 variable "availability_zone" {
   description = "AWS availability zone"
   type        = string
-}
-
-variable "tags" {
-  description = "Tags to apply to resources"
-  type        = map(string)
-  default     = {}
 }
